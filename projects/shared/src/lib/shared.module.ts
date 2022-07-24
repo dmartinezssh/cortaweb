@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 import { SharedComponent } from './shared.component';
 
 
@@ -8,9 +9,11 @@ import { SharedComponent } from './shared.component';
     SharedComponent
   ],
   imports: [
+
   ],
   exports: [
-    SharedComponent
+    SharedComponent,
+    ReactiveFormsModule
   ]
 })
 export class SharedModule { }

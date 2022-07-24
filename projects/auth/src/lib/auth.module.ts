@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AuthComponent } from './auth.component';
 import { LoginComponent } from './login.component';
 import { RegisterComponent } from './register.component';
+import { SharedModule } from '@corta/shared';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -12,10 +13,13 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [
-    AuthComponent
+    AuthComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    SharedModule
   ],
   exports: [
     AuthComponent
