@@ -3,6 +3,20 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
+    "paths": {
+      "@corta/auth": [
+        "projects/auth/src/public-api.ts"
+      ],
+      "@corta/core": [
+        "projects/core/src/public-api.ts"
+      ],
+      "@corta/shared": [
+        "projects/shared/src/public-api.ts"
+      ],
+      "@corta/users": [
+        "projects/users/src/public-api.ts"
+      ]
+    },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
